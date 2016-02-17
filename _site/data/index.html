@@ -1,4 +1,4 @@
-{% assign current = page.link %}
+
 <!DOCTYPE html>
 <html prefix="dct: http://purl.org/dc/terms/
               rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -7,26 +7,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Britain's diet in data | {{ page.title }}</title>
+<title>Britain's diet in data | Get the data</title>
 <link href="http://assets.theodi.org/css/odi-bootstrap-pomegranate.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
-<link rel="shortcut icon" href="{{ site.url_root }}/img/odifavicon32.ico">
+<link rel="shortcut icon" href="http://britains-diet.labs.theodi.org/img/odifavicon32.ico">
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"> </script>
 <script src="http://assets.theodi.org/js/bootstrap-tab.js"> </script>
-{% if current == '/' %}
-<!--
-<link rel="stylesheet" href="/visualisation/p2p.css" type="text/css">
--->
-<script src="http://d3js.org/d3.v3.js"></script>
-<!--
-<script src="/visualisation/queue.js"></script>
-<script src="/visualisation/underscore-min.js"></script>
 
-<script src="/visualisation/topojson.js"></script>
-<script src="/visualisation/cartogram.js"></script>
-<script src="/visualisation/odi_compressed.js"></script>
--->
-{% endif %}
 
 <script type="text/javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -60,7 +47,7 @@
 					BETA
 				</span>
 				<a class='brand' href='http://theodi.org' target="_blank">
-					<img alt="Logo" src="{{ site.url_root }}/img/logo.png" />
+					<img alt="Logo" src="http://britains-diet.labs.theodi.org/img/logo.png" />
 				</a>
 			</div>
 		</div>
@@ -70,24 +57,76 @@
 			<div class='navbar-inner'>
 				<ul class='nav pull-right'>
 					<li>
-						<a href="{{ site.url_root }}/">Home</a>
-						{% if current == '/' %}
-							<div class="arrow-down"></div>
-						{% endif %}
+						<a href="http://britains-diet.labs.theodi.org/">Home</a>
+						
 					</li>
-					{% for w in (1..10) %}
-						{% for p in site.pages %}
-							{% if p.menu == "top" and p.weight == w %}
+					
+						
+							
+						
+							
+						
+					
+						
+							
+						
+							
+						
+					
+						
+							
+						
+							
+						
+					
+						
+							
 							<li>
-								<a href="{{ site.url_root }}{{ p.url | remove: 'index.html' }}">{{p.title}}</a>
-								{% assign url = p.url | remove:'index.html' %}
-								{% if url == current %}
-									<div class="arrow-down"></div>
-								{% endif %}
+								<a href="http://britains-diet.labs.theodi.org/data/">Get the data</a>
+								
+								
 							</li>
-							{% endif %}
-						{% endfor %}
-					{% endfor %}
+							
+						
+							
+						
+					
+						
+							
+						
+							
+						
+					
+						
+							
+						
+							
+						
+					
+						
+							
+						
+							
+						
+					
+						
+							
+						
+							
+						
+					
+						
+							
+						
+							
+						
+					
+						
+							
+						
+							
+						
+					
 				</ul>
 			</div>
 		</div>
@@ -97,10 +136,43 @@
 <div class='whiteout'>
 	<header  style="background-color:#f9bc26;">
 		<div class='container'>
-			<h1>{{ page.title }}</h1>
+			<h1>Get the data</h1>
 		</div>
 	</header>
 
 	<div class='container main-default' id='main'>
 		<div class='row'>
 			<div class='span12'>
+
+
+
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id='footer'>
+	<div class='container'>
+		<div class='span6 footer-content'>
+			<h1><a href='http://www.theodi.org' target="_blank">Open Data Institute</a></h1>
+			<p> <a href='http://www.openstreetmap.org/?lat=51.522205&amp;lon=-0.08176500000001852&amp;zoom=16&amp;layers=T&amp;mlat=51.52210&amp;mlon=-0.08343'>Open Data Institute</a><span>, 65 Clifton Street, London EC2A 4JE</span></p>
+			<p><a href='mailto:info@theodi.org'>info@theodi.org</a> · Company <a href='http://opencorporates.com/companies/gb/08030289'>08030289</a>	· <span>VAT</span> <span>143 7796 80</span></p>
+			<p class='license'><a href='http://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB' rel='license'><img alt="Creative Commons Licence" height="15" src="http://britains-diet.labs.theodi.org/img/logo_cc_80x15.png" width="80" /></a></p>
+			<p>Released on 2016-02-18.</p>
+		</div>
+		<div class='span6 footer-nav'>
+			<nav>
+				<ul class='pull-right'>
+					
+						
+					
+						
+					
+				</ul>
+			</nav>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
