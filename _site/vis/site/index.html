@@ -405,7 +405,7 @@ function updatePersonCharts(data_to_plot, year, no_animation) {
 	var liquids_data = data_to_plot//.sort(sort)
 		.filter(function(d) { return d.unit == "ml" || d.unit == "ml eq" })
 
-	$("#solids-chart").style("height", solids_data.length*20 + PC_MARGIN.top + PC_MARGIN.bottom + "px")
+	$("#solids-chart").style("height", solids_data.length*20 + PC_MARGIN.top + PC_MARGIN.bottom + "px");
 	$("#liquids-chart")
 			.style("height", liquids_data.length*20 + PC_MARGIN.top + PC_MARGIN.bottom + "px");
 	$$(".liquids")
@@ -419,6 +419,7 @@ function updatePersonCharts(data_to_plot, year, no_animation) {
 		.name(function(d, i) {
 			if (solids_data[i]) return solids_data[i].title;
 		});
+
 	if (no_animation) solids_chart.draw();
 	else solids_chart.update();
 
@@ -440,6 +441,8 @@ function initPersonCharts() {
 	solids_chart = Kiln.chart("#solids-chart")
 		.mode("bar")
 		.barValues(true)
+		.xScaleNice(true)
+		.xTicks(3)
 		.barPadding(0.5)
 		.margin(PC_MARGIN)
 		.stroke("none")
@@ -448,6 +451,8 @@ function initPersonCharts() {
 	liquids_chart = Kiln.chart("#liquids-chart")
 		.mode("bar")
 		.barValues(true)
+		.xScaleNice(true)
+		.xTicks(3)
 		.barPadding(0.5)
 		.margin(PC_MARGIN)
 		.barValuesNoData("Category not yet tracked")
