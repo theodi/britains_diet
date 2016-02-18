@@ -10,7 +10,8 @@
 <title>Britain's diet in data | Get the data</title>
 <link href="http://assets.theodi.org/css/odi-bootstrap-pomegranate.css" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet">
-<link rel="shortcut icon" href="http://britains-diet.labs.theodi.org/img/odifavicon32.ico">
+<link rel=”icon” href=”favicon.ico” type=”/img/odifavicon32.ico”>
+<link rel="shortcut icon" href="/img/odifavicon32.ico">
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"> </script>
 <script src="http://assets.theodi.org/js/bootstrap-tab.js"> </script>
 
@@ -21,20 +22,16 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UGACODE', 'theodi.org');
+  ga('create', 'UA-34573394-26', 'theodi.org');
   ga('send', 'pageview');
 </script>
 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
 
+
 <script type="text/javascript">
-    window.onload = function() {
-        var iframe = document.getElementById("blogFrame");
-        iframe.parentNode.style.height = iframe.scrollHeight + "px";
-    }
-</script>
+  setInterval(function(){document.getElementById('frame').height = document.getElementById('frame').contentWindow.document.body.scrollHeight;}, 200);
 
 </script>
-
 
 </head>
 <body>
@@ -133,7 +130,8 @@
 	</div>
 </nav>
 
-<div class='whiteout'>
+<!--<div class='whiteout'>-->
+<div>
 	<header  style="background-color:#f9bc26;">
 		<div class='container'>
 			<h1>Get the data</h1>
@@ -145,6 +143,47 @@
 			<div class='span12'>
 
 
+<p>Want to get at the data for this project?</p>
+
+<span content='http://id.loc.gov/vocabulary/iso639-1/en' property='dct:language'> </span>
+
+<div property='dcat:dataset' resource='http://p2p.labs.theodi.org/download/#full' typeof='dcat:Dataset'>
+	<h3 property='dct:title'>London Fire Brigade - Incident Records</h3>
+
+	<div property='dcat:distribution' typeof='dcat:Distribution'>
+
+		<ul>
+			<li><strong>Format</strong>&nbsp;CSV</li>
+			<li><strong>Size</strong>&nbsp;25MB</li>
+			<li><strong>Coverage</strong>&nbsp;Metropolitan London, 1/1/2009 - 31/3/2013</li>
+			<li><strong>Source</strong>&nbsp;<a href="http://data.london.gov.uk/datastore/package/london-fire-brigade-incident-records">London.gov.uk's "London Datastore" service</a></li>
+		</ul>
+
+		<p><a class='btn btn-primary' href='LFB.csv.zip' property='dcat:accessURL'>Download the dataset</a></p>
+
+		<p>&nbsp;</p>
+
+	</div>
+</div>
+
+<div property='dcat:dataset' resource='http://p2p.labs.theodi.org/download/#full' typeof='dcat:Dataset'>
+	<h3 property='dct:title'>Office for National Statistics - Regional Profiles: Key Statistics - London, August 2012</h3>
+
+	<div property='dcat:distribution' typeof='dcat:Distribution'>
+
+		<ul>
+			<li><strong>Format</strong>&nbsp;CSV (derived from original Excel file)</li>
+			<li><strong>Size</strong>&nbsp;1KB</li>
+			<li><strong>Coverage</strong>&nbsp;Metropolitan London</li>
+			<li><strong>Source</strong>&nbsp;<a href="http://www.ons.gov.uk/ons/rel/regional-trends/region-and-country-profiles/key-statistics-and-profiles---august-2012/key-statistics---london--august-2012.html">Office for National Statistics website</a></li>
+		</ul>
+
+		<p><a class='btn btn-primary' href='https://raw.github.com/theodi/FNR_Analysis/master/data/raw/census.csv' property='dcat:accessURL'>Download the dataset</a></p>
+
+		<p>&nbsp;</p>
+
+	</div>
+</div>
 
 
 			</div>

@@ -1,0 +1,8 @@
+// =============================================================================
+// Media Queries (use ems instead of pixels to account for user zoom)
+// =============================================================================
+
+$mqxs: 				"only screen and ( max-width: 25em )"; 		// <400px
+$mqs: 				"only screen and ( max-width: 40em )";		// <640px
+$mqm: 				"only screen and ( max-width: 60em )";		// <960px
+$mql: 				"only screen and ( max-width: 80em )";		// <1280px
