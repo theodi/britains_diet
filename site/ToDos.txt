@@ -1,0 +1,15 @@
+Style up article pages
+
+Too slow to open large country lists on mobile
+
+Top needs to be fixed on small screens
+
+Data-table-header breaking over two lines on small screens
+
+Zoom button looks weird / narrow on iOS
+
+Browser check
+
+Bug observed where previously selected country in agency list ends up at top of trainee list when clicking back to trainees
+
+Nav text "AGENCIES" & "CATEGORIES" should maybe match bubble colour

@@ -1,0 +1,87 @@
+// =============================================================================
+// Typography defaults
+// =============================================================================
+
+* {
+	-webkit-font-smoothing: antialiased;
+	// http://practice.typekit.com/lesson/caring-about-opentype-features/
+	font-kerning: normal;
+	font-variant-ligatures: common-ligatures, contextual;
+	-moz-font-feature-settings: "kern", "liga", "clig", "calt";
+	-ms-font-feature-settings: "kern", "liga", "clig", "alt";
+	-webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+	font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+$fontSans: Helvetica, Arial, sans-serif;
+$fontSerif: 'Georgia', serif;
+
+body {
+	font-family: $fontSans;
+	letter-spacing: -0.035em;
+}
+
+a {
+	text-decoration: underline;
+	color: inherit;
+	&:hover {
+		color: map-get($text, highlight);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-rendering: optimizeLegibility;
+	color: black;
+	font-weight: 700;
+	line-height: 1.2;
+	.sub {
+		font-weight: 400;
+	}
+}
+
+h1 {
+	font-size: 30px;
+	letter-spacing: -0.05em;
+}
+
+h2 {
+	font-size: 21px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+h6 {
+	font-size: 18px;
+}
+
+p {
+	margin-top: 0.8em;
+	line-height: 1.3em;
+	font-family: $fontSans;
+}
+
+strong, b {
+	font-weight: bold;
+}
+
+em, i {
+	font-style:italic;
+}
+
+.no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
